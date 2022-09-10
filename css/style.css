@@ -971,11 +971,11 @@ color: var(--accent-color);
   outline: #000000;
 }
 
-.mod-form-check:checked + .modal-custom-svg.mod-svg-checked {
+.mod-form-check:checked ~ .modal-custom-svg.mod-svg-checked {
   display: block;
 }
 
-.mod-form-check:focus + .mod-custom-svg {
+.mod-form-check:focus ~ .mod-custom-svg {
   box-shadow: 0 0 0 2px var(--accent-color);
 
 }
