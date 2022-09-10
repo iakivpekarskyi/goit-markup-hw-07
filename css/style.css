@@ -939,11 +939,15 @@ color: rgba(117, 117, 117, 0.5);
 
 }
 
+
 .mod-svg-checked {
   display: none;
+  fill: brown;
 }
 
 
 .mod-form-check:checked + .mod-custom-svg {
-  background-color: firebrick;
+  background-color: tomato;
+  color: firebrick;
+  outline: #000000;
 }
