@@ -837,7 +837,8 @@ a {
   transition: fill var(--transition-dur-and-func);
 }
 
-.modal-close-btn:focus {
+.modal-close-btn:focus,
+.modal-close-btn:hover {
   fill: var(--accent-color);
 }
 
@@ -846,10 +847,10 @@ a {
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1, 15;
+  line-height: 1,15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  
 }
 
 .contact-box {
@@ -916,6 +917,7 @@ a {
   padding-right: 16px;
   transition: border-color var(--transition-dur-and-func);
   resize: none;
+  margin-bottom: 10px;
 }
 
 .mod-input-message:focus {
@@ -945,9 +947,64 @@ color: rgba(117, 117, 117, 0.5);
   fill: brown;
 }
 
+.mod-text {
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--secondary-color-text);
+margin-bottom: 30px;
+
+}
+
+.mod-text.link {
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--accent-color);
+  
+}
+
 
 .mod-form-check:checked + .mod-custom-svg {
   background-color: tomato;
   color: firebrick;
   outline: #000000;
+}
+
+.mod-form-check:checked + .modal-custom-svg.mod-svg-checked {
+  display: block;
+}
+
+.mod-form-check:focus + .mod-custom-svg {
+  box-shadow: 0 0 0 2px var(--accent-color);
+
+}
+
+
+.modal-from-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  min-width: 200px;
+  min-height: 50px;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin-left: 12px;
+  margin-top: 30px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: background-color var(--transition-dur-and-func);
+}
+.modal-from-sub:focus,
+.modal-from-sub:hover {
+  background-color: var(--button-hover);
 }
