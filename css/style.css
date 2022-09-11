@@ -983,19 +983,14 @@ color: var(--accent-color);
   border-radius: 2px;
   width: 16px;
   height: 15px;
-  m
 
 }
 
 .mod-form-check:focus + .mod-custom-svg {
   box-shadow: 0 0 0 2px var(--accent-color);
-  border:none;
-
+   
 }
 
-.checkbox {
-  
-}
 
 .modal-from-sub {
   display: flex;
