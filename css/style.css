@@ -917,7 +917,7 @@ a {
   padding-right: 16px;
   transition: border-color var(--transition-dur-and-func);
   resize: none;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .mod-input-message:focus {
@@ -934,25 +934,21 @@ color: rgba(117, 117, 117, 0.5);
 
 }
 
-.mod-custom-svg {
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  cursor: pointer;
 
+.mod-form-lable.check {
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-
-.mod-svg-checked {
-  display: none;
-  fill: brown;
-}
 
 .mod-text {
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--secondary-color-text);
-margin-bottom: 30px;
+margin-left: 8px;
 
 }
 
@@ -964,22 +960,42 @@ color: var(--accent-color);
   
 }
 
-
-.mod-form-check:checked + .mod-custom-svg {
-  background-color: tomato;
-  color: firebrick;
-  outline: #000000;
+.mod-form-check {
+  position: absolute;
+  appearance: none;
 }
 
-.mod-form-check:checked ~ .modal-custom-svg.mod-svg-checked {
+.mod-form-check:checked + .mod-custom-svg {
+  border: none;
+  fill: var(--footer-font);
+  background-color: #188ce8;
+  display: inline-block;
+  
+}
+
+.mod-form-check:checked + .mod-custom-svg.mod-svg-checked {
   display: block;
 }
 
-.mod-form-check:focus ~ .mod-custom-svg {
-  box-shadow: 0 0 0 2px var(--accent-color);
+.mod-custom-svg {
+  fill: transparent;
+  border: 1px solid var(--main-color-text);
+  border-radius: 2px;
+  width: 16px;
+  height: 15px;
+  m
 
 }
 
+.mod-form-check:focus + .mod-custom-svg {
+  box-shadow: 0 0 0 2px var(--accent-color);
+  border:none;
+
+}
+
+.checkbox {
+  
+}
 
 .modal-from-sub {
   display: flex;
