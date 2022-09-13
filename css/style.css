@@ -630,6 +630,10 @@ color: rgba(255, 255, 255, 0.6);
   margin-left: 10px;
 }
 
+.sub {
+  margin-left: 12px;
+}
+
 .sub-btn {
   display: flex;
   justify-content: center;
@@ -644,7 +648,7 @@ color: rgba(255, 255, 255, 0.6);
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-left: 12px;
+  
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -813,7 +817,7 @@ a {
   transform: translate(-50%, -50%);
 
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -917,7 +921,7 @@ a {
   padding-right: 16px;
   transition: border-color var(--transition-dur-and-func);
   resize: none;
-  margin-bottom: 20px;
+ 
 }
 
 .mod-input-message:focus {
@@ -942,6 +946,11 @@ align-items: center;
 justify-content: center;
 }
 
+
+.mod-form-lable {
+   margin-bottom: 20px;
+
+}
 
 .mod-text {
 font-size: 14px;
@@ -1007,7 +1016,6 @@ color: var(--accent-color);
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-left: 12px;
   margin-top: 30px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
