@@ -21,14 +21,15 @@
 
 .card {
   display: block;
-}
-
-.card:hover,
-.card:focus {
+  &:hover,
+&:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: box-shadow var(--transition-dur-and-func);
 }
+}
+
+
 
 .port-item {
   padding: 20px 24px;
@@ -54,6 +55,14 @@ a {
   padding: 6px 25px;
   transition: box-shadow var(--transition-dur-and-func), color var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func);
+
+    &:focus,
+&:hover {
+  background-color: #188ce8;
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 }
 
 .porthead {
@@ -70,13 +79,7 @@ a {
   margin-bottom: 4px;
 }
 
-.port-btn:focus,
-.port-btn:hover {
-  background-color: #188ce8;
-  color: var(--white-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+
 
 .portfolio-heading {
   position: absolute;
@@ -117,6 +120,12 @@ a {
   overflow: auto;
   transform: translateY(101%);
   transition: transform var(--transition-dur-and-func);
+.card:hover &,
+.card:focus & {
+  transform: translateY(0%);
+}
+
+
 }
 
 .portfolio-card-wrapper {
@@ -124,8 +133,4 @@ a {
   overflow: hidden;
 }
 
-.card:hover .port-overlay,
-.card:focus .port-overlay {
-  transform: translateY(0%);
-}
 

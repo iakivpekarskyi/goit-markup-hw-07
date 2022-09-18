@@ -267,9 +267,7 @@ img {
   border: 1px solid transparent;
   transition: background-color var(--transition-dur-and-func);
 }
-
-.button-hero:focus,
-.button-hero:hover {
+.button-hero:focus, .button-hero:hover {
   background-color: var(--button-hover);
 }
 
@@ -445,9 +443,7 @@ img {
   fill: var(--social-link);
   transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
 }
-
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link:hover, .social-list-link:focus {
   background-color: var(--accent-color);
   fill: var(--footer-font);
 }
@@ -481,16 +477,14 @@ img {
   transition: color var(--transition-dur-and-func), border-color var(--transition-dur-and-func);
   fill: currentColor;
 }
+.clients-link:hover, .clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
 
 .clients-logo {
   width: 106px;
   height: 60px;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
 }
 
 .footer-section {
@@ -591,7 +585,6 @@ address .link-phone:hover {
   padding-left: 16px;
   color: var(--footer-font);
 }
-
 .sub-box::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -630,9 +623,7 @@ address .link-phone:hover {
   border: 1px solid transparent;
   transition: background-color var(--transition-dur-and-func);
 }
-
-.sub-btn:focus,
-.sub-btn:hover {
+.sub-btn:focus, .sub-btn:hover {
   background-color: var(--button-hover);
 }
 
@@ -680,9 +671,7 @@ address .link-phone:hover {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill var(--transition-dur-and-func);
 }
-
-.modal-close-btn:focus,
-.modal-close-btn:hover {
+.modal-close-btn:focus, .modal-close-btn:hover {
   fill: var(--accent-color);
 }
 
@@ -711,6 +700,10 @@ address .link-phone:hover {
   padding-left: 40px;
   transition: border-color var(--transition-dur-and-func);
 }
+.mod-input-field:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
 
 .mod-form-input-desc {
   font-size: 12px;
@@ -718,9 +711,6 @@ address .link-phone:hover {
   letter-spacing: 0.01em;
   color: var(--secondary-color-text);
   margin-bottom: 4px;
-}
-
-.mod-form-input-desc {
   margin-top: 10px;
 }
 
@@ -736,12 +726,6 @@ address .link-phone:hover {
   transform: translateY(-50%);
   transition: fill var(--transition-dur-and-func);
 }
-
-.mod-input-field:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-
 .mod-input-field:focus + .mod-icon {
   fill: var(--accent-color);
 }
@@ -759,12 +743,10 @@ address .link-phone:hover {
   transition: border-color var(--transition-dur-and-func);
   resize: none;
 }
-
 .mod-input-message:focus {
   border-color: var(--accent-color);
   outline: none;
 }
-
 .mod-input-message::placeholder {
   font-size: 12px;
   line-height: 1.16;
@@ -803,17 +785,6 @@ address .link-phone:hover {
   appearance: none;
 }
 
-.mod-form-check:checked + .mod-custom-svg {
-  border: none;
-  fill: var(--footer-font);
-  background-color: #188ce8;
-  display: inline-block;
-}
-
-.mod-form-check:checked + .mod-custom-svg.mod-svg-checked {
-  display: block;
-}
-
 .mod-custom-svg {
   fill: transparent;
   border: 1px solid var(--main-color-text);
@@ -821,9 +792,17 @@ address .link-phone:hover {
   width: 16px;
   height: 15px;
 }
-
 .mod-form-check:focus + .mod-custom-svg {
   box-shadow: 0 0 0 2px var(--accent-color);
+}
+.mod-form-check:checked + .mod-custom-svg.mod-svg-checked {
+  display: block;
+}
+.mod-form-check:checked + .mod-custom-svg {
+  border: none;
+  fill: var(--footer-font);
+  background-color: #188ce8;
+  display: inline-block;
 }
 
 .modal-from-sub {
@@ -847,9 +826,7 @@ address .link-phone:hover {
   border: 1px solid transparent;
   transition: background-color var(--transition-dur-and-func);
 }
-
-.modal-from-sub:focus,
-.modal-from-sub:hover {
+.modal-from-sub:focus, .modal-from-sub:hover {
   background-color: var(--button-hover);
 }
 
@@ -875,9 +852,7 @@ address .link-phone:hover {
 .card {
   display: block;
 }
-
-.card:hover,
-.card:focus {
+.card:hover, .card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: box-shadow var(--transition-dur-and-func);
 }
@@ -906,6 +881,11 @@ a {
   padding: 6px 25px;
   transition: box-shadow var(--transition-dur-and-func), color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 }
+.port-btn:focus, .port-btn:hover {
+  background-color: #188ce8;
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 .porthead {
   font-weight: 700;
@@ -919,13 +899,6 @@ a {
 .porthead.link {
   text-align: left;
   margin-bottom: 4px;
-}
-
-.port-btn:focus,
-.port-btn:hover {
-  background-color: #188ce8;
-  color: var(--white-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-heading {
@@ -968,13 +941,11 @@ a {
   transform: translateY(101%);
   transition: transform var(--transition-dur-and-func);
 }
+.card:hover .port-overlay, .card:focus .port-overlay {
+  transform: translateY(0%);
+}
 
 .portfolio-card-wrapper {
   position: relative;
   overflow: hidden;
-}
-
-.card:hover .port-overlay,
-.card:focus .port-overlay {
-  transform: translateY(0%);
 }/*# sourceMappingURL=main.css.map */

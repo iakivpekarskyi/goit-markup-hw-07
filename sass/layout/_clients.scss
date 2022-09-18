@@ -21,6 +21,12 @@
   color: var(--social-link);
   transition: color var(--transition-dur-and-func), border-color var(--transition-dur-and-func);
   fill: currentColor;
+&:hover,
+&:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 }
 
 .clients-logo {
@@ -28,8 +34,4 @@
   height: 60px;
 }
 
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-}
+

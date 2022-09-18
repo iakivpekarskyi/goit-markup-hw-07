@@ -50,9 +50,10 @@
   text-align: center;
   border: 1px solid transparent;
   transition: background-color var(--transition-dur-and-func);
-}
-
-.button-hero:focus,
-.button-hero:hover {
+  &:focus,
+&:hover {
   background-color: var(--button-hover);
 }
+}
+
+

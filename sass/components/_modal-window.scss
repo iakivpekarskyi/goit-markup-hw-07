@@ -28,9 +28,9 @@
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill var(--transition-dur-and-func);
-}
-
-.modal-close-btn:focus,
-.modal-close-btn:hover {
+  &:focus,
+ &:hover {
   fill: var(--accent-color);
 }
+}
+

@@ -26,6 +26,10 @@
   border-radius: 4px;
   padding-left: 40px;
   transition: border-color var(--transition-dur-and-func);
+  &:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
 }
 
 .mod-form-input-desc {
@@ -51,16 +55,14 @@
   top: 50%;
   transform: translateY(-50%);
   transition: fill var(--transition-dur-and-func);
-}
-
-.mod-input-field:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-
-.mod-input-field:focus + .mod-icon {
+  .mod-input-field:focus + & {
   fill: var(--accent-color);
 }
+}
+
+
+
+
 
 .mod-input-message {
   margin: 0;
@@ -74,15 +76,12 @@
   padding-right: 16px;
   transition: border-color var(--transition-dur-and-func);
   resize: none;
- 
-}
-
-.mod-input-message:focus {
+  &:focus {
   border-color: var(--accent-color);
   outline: none;
 }
 
-.mod-input-message::placeholder {
+&::placeholder {
   font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
@@ -90,6 +89,12 @@ letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
 
 }
+ 
+}
+
+
+
+
 
 
 .mod-form-lable.check {
@@ -125,19 +130,17 @@ color: var(--accent-color);
 .mod-form-check {
   position: absolute;
   appearance: none;
-}
-
-.mod-form-check:checked + .mod-custom-svg {
+  &:checked + .mod-custom-svg {
   border: none;
   fill: var(--footer-font);
   background-color: #188ce8;
   display: inline-block;
   
 }
-
-.mod-form-check:checked + .mod-custom-svg.mod-svg-checked {
-  display: block;
 }
+
+
+
 
 .mod-custom-svg {
   fill: transparent;
@@ -145,13 +148,18 @@ color: var(--accent-color);
   border-radius: 2px;
   width: 16px;
   height: 15px;
-
+  .mod-form-check:checked + &.mod-svg-checked {
+  display: block;
 }
-
-.mod-form-check:focus + .mod-custom-svg {
+.mod-form-check:focus + & {
   box-shadow: 0 0 0 2px var(--accent-color);
    
 }
+
+
+}
+
+
 
 
 .modal-from-sub {
@@ -175,8 +183,9 @@ color: var(--accent-color);
   border-radius: 4px;
   border: 1px solid transparent;
   transition: background-color var(--transition-dur-and-func);
-}
-.modal-from-sub:focus,
-.modal-from-sub:hover {
+  &:focus,
+  &:hover {
   background-color: var(--button-hover);
 }
+}
+

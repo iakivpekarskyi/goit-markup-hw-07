@@ -14,13 +14,14 @@
   border-radius: 50%;
   fill: var(--social-link);
   transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
+  &:hover,
+  &:focus {
   background-color: var(--accent-color);
   fill: var(--footer-font);
 }
+}
+
+
 
 .social-list-icon {
   width: 20px;
