@@ -1,6 +1,8 @@
 @import './utils/variables';
 @import './base/common';
+@import './base/container';
 @import './layout/header';
+@import './components/logo';
 @import './layout/hero';
 @import './layout/features';
 @import './layout/work'; 
@@ -10,4 +12,5 @@
 @import './layout/footer';
 @import './utils/modal';
 @import './layout/portfolio';
-@import './components/logo';
+
+
