@@ -60,6 +60,12 @@ img {
   display: block;
 }
 
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -79,6 +85,28 @@ img {
 }
 .site-nav.list {
   display: none;
+}
+
+.auth-nav.list {
+  display: none;
+}
+
+.mob-menu-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  line-height: 0;
+}
+
+.mob-menu-btn__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-box__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
